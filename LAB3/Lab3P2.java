@@ -1,3 +1,4 @@
+//program to check whether the number is prime upto n numbers using do while 
 import java.util.Scanner;
 
 class Lab3P2{
