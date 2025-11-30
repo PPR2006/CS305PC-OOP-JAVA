@@ -11,12 +11,10 @@ class Lab8p1 extends Frame implements ActionListener {
         setMenuBar(mb);
         setLayout(null);
 
-        // FIX 1: 'new label()' → 'new Label()'
         label = new Label();
         label.setFont(new Font("Arial", Font.BOLD, 40));
         label.setBounds(150, 200, 200, 50);
-
-        // FIX 2: 'bl.CENTRE' is invalid → simply use add(label);
+        
         add(label);
 
         String[] menus = {"File", "Edit", "Help"};
@@ -32,7 +30,7 @@ class Lab8p1 extends Frame implements ActionListener {
             Menu m = new Menu(s);
             for (int y = 0; y < 4; y++) {
                 MenuItem item = new MenuItem(mi[x][y]);
-                item.addActionListener(this);  // FIX 3: menu items must listen
+                item.addActionListener(this);
                 m.add(item);
             }
             mb.add(m);
